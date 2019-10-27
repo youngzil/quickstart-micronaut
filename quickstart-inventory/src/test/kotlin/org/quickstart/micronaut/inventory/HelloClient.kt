@@ -13,8 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package example
-
+package org.quickstart.micronaut.inventory
 import io.micronaut.http.annotation.Get
 import io.micronaut.http.client.annotation.Client
 import io.reactivex.Single

@@ -1,4 +1,4 @@
-package example
+package org.quickstart.micronaut.inventory
 
 import javax.inject.Singleton
 

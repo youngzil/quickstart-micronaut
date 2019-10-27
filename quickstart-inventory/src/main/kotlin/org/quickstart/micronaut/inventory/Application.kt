@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package example
+package org.quickstart.micronaut.inventory
 
 import io.micronaut.runtime.Micronaut
 
@@ -29,7 +29,7 @@ object Application {
     @JvmStatic
     fun main(args: Array<String>) {
         Micronaut.build()
-                 .packages("example")
+                 .packages("org.quickstart.micronaut.inventory")
                  .mainClass(Application.javaClass)
                  .start()
     }

@@ -24,6 +24,7 @@
   </properties>
 
   <dependencies>
+
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-stdlib-jdk8</artifactId>
@@ -45,6 +46,11 @@
 
     <dependency>
       <groupId>io.micronaut</groupId>
+      <artifactId>micronaut-inject-java</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>io.micronaut</groupId>
       <artifactId>micronaut-http-server-netty</artifactId>
       <scope>compile</scope>
     </dependency>
@@ -55,15 +61,26 @@
     </dependency>
 
     <dependency>
+      <groupId>io.micronaut.configuration</groupId>
+      <artifactId>micronaut-openapi</artifactId>
+    </dependency>
+
+    <dependency>
       <groupId>io.micronaut</groupId>
       <artifactId>micronaut-discovery-client</artifactId>
     </dependency>
 
     <dependency>
+      <groupId>io.micronaut</groupId>
+      <artifactId>micronaut-validation</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>io.swagger.core.v3</groupId>
       <artifactId>swagger-annotations</artifactId>
       <scope>compile</scope>
     </dependency>
+
     <dependency>
       <groupId>com.fasterxml.jackson.module</groupId>
       <artifactId>jackson-module-kotlin</artifactId>
@@ -77,6 +94,12 @@
       <version>1.2.3</version>
       <scope>runtime</scope>
     </dependency>
+
+    <!-- dependencies {
+   testImplementation "org.mockito:mockito-junit-jupiter:2.22.0"
+   testRuntimeOnly "org.jetbrains.spek:spek-junit-platform-engine:1.1.5"
+   }-->
+
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
