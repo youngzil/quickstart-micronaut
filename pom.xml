@@ -52,6 +52,15 @@
         <scope>import</scope>
         <type>pom</type>
       </dependency>
+
+      <dependency>
+        <groupId>org.jooby</groupId>
+        <artifactId>jooby-project</artifactId>
+        <version>1.6.4</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+
     </dependencies>
   </dependencyManagement>
 
@@ -59,13 +68,21 @@
     <module>quickstart-books</module>
     <module>quickstart-inventory</module>
     <module>quickstart-gateway</module>
+    <module>quickstart-javalin-java</module>
+    <module>quickstart-javalin-kotlin</module>
+    <module>quickstart-jooby-java</module>
+    <module>quickstart-jooby-kotlin</module>
+    <module>quickstart-micronaut-java</module>
+    <module>quickstart-micronaut-kotlin</module>
+    <module>quickstart-spark-java</module>
+    <module>quickstart-spark-kotlin</module>
   </modules>
 
   <build>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.5.1</version>
+        <version>3.8.1</version>
         <configuration>
           <source>${maven.compiler.source}</source>
           <target>${maven.compiler.target}</target>
