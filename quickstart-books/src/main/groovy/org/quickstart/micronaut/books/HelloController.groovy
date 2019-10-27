@@ -17,6 +17,7 @@ package org.quickstart.micronaut.books
 
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
+import io.reactivex.Single
 
 /**
  * @author Graeme Rocher
@@ -28,5 +29,10 @@ class HelloController {
     @Get("/hello/{name}")
     String hello(String name) {
         return " Hello $name!"
+    }
+
+    @Get("/{name}")
+    public Single<String> hello2(String name) {
+        return Single.just("Hello " + name + "!");
     }
 }
