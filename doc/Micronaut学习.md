@@ -23,6 +23,8 @@ http://127.0.0.1:8500/ui/
 分别执行quickstart-books、quickstart-gateway、quickstart-inventory中的Application启动类
 再次去Consul控制台查看注册信息情况
 
+quickstart-inventory项目访问不了，不知道为什么
+
 分别访问
 http://localhost:8080/hello/John
 http://localhost:8081/hello/John
@@ -30,8 +32,6 @@ http://localhost:8082/hello/John
 
 
 curl http://localhost:8080/api/books
-
-
 
 
 
